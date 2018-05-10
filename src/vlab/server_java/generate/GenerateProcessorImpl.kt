@@ -10,10 +10,10 @@ import rlcp.server.processor.generate.GenerateProcessor
 class GenerateProcessorImpl : GenerateProcessor {
     override fun generate(condition: String): GeneratingResult {
         //do Generate logic here
-        val text = "JavaText"
-        val code = "JavaCode"
+        val text = "Проведите поиск наибольшего общего делителя, используя алгоритм Евклида";
+        val code = listOf(1071, 462)
         val instructions = "JavaInstructions"
 
-        return GeneratingResult(text, code, instructions)
+        return GeneratingResult(text, code.toString(), instructions)
     }
 }

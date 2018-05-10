@@ -21,7 +21,7 @@ object Starter {
         val context = GenericXmlApplicationContext()
         context.load("classpath:vlab/server_java/java-server-config.xml")
         context.refresh()
-        if (args.size == 0) {
+        if (args.isEmpty()) {
             Thread(context.getBean("server", Server::class.java)).start()
         } else {
             val consoleStarter = vlab.ConsoleStarter()

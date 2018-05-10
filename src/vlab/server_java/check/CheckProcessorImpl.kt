@@ -15,7 +15,11 @@ import java.math.BigDecimal
  */
 class CheckProcessorImpl : PreCheckResultAwareCheckProcessor<String> {
     @Throws(Exception::class)
-    override fun checkSingleCondition(condition: ConditionForChecking, instructions: String, generatingResult: GeneratingResult): CheckProcessor.CheckingSingleConditionResult {
+    override fun checkSingleCondition(
+            condition: ConditionForChecking,
+            instructions: String,
+            generatingResult: GeneratingResult
+    ): CheckProcessor.CheckingSingleConditionResult {
         //do check logic here
         val points = BigDecimal(1.0)
         val comment = "it's ok"

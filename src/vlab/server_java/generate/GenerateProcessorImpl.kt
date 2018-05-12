@@ -11,7 +11,7 @@ class GenerateProcessorImpl : GenerateProcessor {
     override fun generate(condition: String): GeneratingResult {
         //do Generate logic here
         val text = "Проведите поиск наибольшего общего делителя, используя алгоритм Евклида";
-        val code = listOf(1071, 462)
+        val code = listOf(35, 21)
         val instructions = "JavaInstructions"
 
         return GeneratingResult(text, code.toString(), instructions)

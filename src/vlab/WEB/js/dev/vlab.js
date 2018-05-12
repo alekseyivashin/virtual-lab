@@ -51,10 +51,12 @@ var Vlab = {
     },
     getResults: function () {
         const rows = this.div.children(".row");
-        const data = rows.map(function(){
-            return this.find(".row-result").text()
-        }).get().join();
-        return value;
+        const values = [];
+        rows.each(function(){
+            const stringNumber = $(this).find(".row-result").text().toString();
+            values.push(parseInt(stringNumber));
+        });
+        return values;
     },
     calculateHandler: function (text, code) {
     }

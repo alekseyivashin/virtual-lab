@@ -1,0 +1,39 @@
+.add-row {
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    border: 2px solid darkblue;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.row .first-number,
+.row .second-number {
+    max-width: 70px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row .minus {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row .calculate {
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row .result {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: cornflowerblue;
+}

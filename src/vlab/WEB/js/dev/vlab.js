@@ -21,7 +21,7 @@ var Vlab = {
     },
 
     getAddRowBtn() {
-        return $("<button>Add row</button>").click(() => {
+        return $("<button class='add-row'>Add row</button>").click(() => {
             this.div.append(this.generateRow());
         });
     },
@@ -32,11 +32,11 @@ var Vlab = {
 
     generateRow(firstNumber, secondNumber) {
         const row = $("<div class='row'></div>");
-        const firstInput = $("<input type='number'>").val(firstNumber);
-        const minusSign = $("<span> - </span>");
-        const secondInput = $("<input type='number'>").val(secondNumber);
-        const result = $("<span class='row-result'></span>");
-        const calculateBtn = $("<button type='button'>=</button>").click(() => {
+        const firstInput = $("<input type='number' class='first-number'>").val(firstNumber);
+        const minusSign = $("<span class='minus'> - </span>");
+        const secondInput = $("<input type='number' class='second-number'>").val(secondNumber);
+        const result = $("<span class='result'></span>");
+        const calculateBtn = $("<button type='button' class='calculate'>=</button>").click(() => {
             result.text(firstInput.val() - secondInput.val());
         });
         return row
